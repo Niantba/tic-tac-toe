@@ -25,9 +25,7 @@ export default function Player({initialName, symbol, isActive, onChangeName }) {
   return (
     <li className={isActive ? "active" : undefined}>
       <span className="player">
-        {/* {!isEditing && (<span className="player-name">{name}</span>)}
-        {isEditing && (<input />)} */
-        editablePlayerName}
+        {editablePlayerName}
         <span className="player-symbol">{symbol}</span>
       </span>
       <button onClick={handleEdit}>{isEditing ? "Save" : "Edit"}</button>
